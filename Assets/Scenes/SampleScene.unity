@@ -200,7 +200,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.70358664, g: 0.9150943, b: 0.7446886, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 793867008}
   - component: {fileID: 793867007}
   - component: {fileID: 793867009}
+  - component: {fileID: 793867010}
   m_Layer: 0
   m_Name: Internet
   m_TagString: Untagged
@@ -407,12 +408,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -78689424644780518, guid: 48f492b0976b4435db8f971db4b804bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9028157eba330d43b42166d2dd8f6cc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 208, y: 368}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -427,7 +428,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -446,6 +447,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Que
   target: {fileID: 1744111813}
   speed: 2
+--- !u!114 &793867010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793867006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d518ce3918da1c4c80f333ab543402f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WiFi
+  target: {fileID: 1744111813}
+  speed: 2
+  playerMove: {fileID: 1744111816}
+  sprites:
+  - {fileID: 21300000, guid: f50784cd0da7b054fb14d63d6da32f87, type: 3}
+  - {fileID: 21300000, guid: d43d6b23fb1aa144c8d899375aa5e254, type: 3}
+  - {fileID: 21300000, guid: ead91d958bd2b274e9a6dd57b48d3622, type: 3}
+  - {fileID: 21300000, guid: f9028157eba330d43b42166d2dd8f6cc, type: 3}
+  maxDistance: 5
 --- !u!1 &1744111810
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +481,7 @@ GameObject:
   - component: {fileID: 1744111814}
   - component: {fileID: 1744111816}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Student
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -552,7 +574,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
